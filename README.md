@@ -1,73 +1,70 @@
-### Kannada MNIST Classification with Deep Learning (Custom Convolutional Neural Network) 
+### Cuisine-Detection 
 <pre>
-Domain             : Computer Vision, Machine Learning
-Sub-Domain         : Deep Learning, Image Recognition
-Techniques         : Deep Convolutional Neural Network
-Application        : Image Recognition, Image Classification
+Domain             : Machine Learning
+Sub-Domain         : Supervised Learning, Classification
+Techniques         : 
+Application        : 
 </pre>
 
 ### Description
 <pre>
-Kannada is a language spoken predominantly by people of Karnataka in southwestern India. The language has roughly 45 million native speakers and is written using the Kannada script.
-1. Detected 10 Kannada (Kannada is a language spoken predominantly by people of Karnataka in southwestern India. The language has roughly 45 million native speakers) digits from images with Custom Convolutional Neural Network.
-2. Built a simple custom convolutional neural network with few 2D convolutional, Maxpool and 1 dense layer with around 888K trainable params.
-3. After 27 training iterations, attained testing accuracy of 97.70% and loss 0.03 on 60K (12MB+) OCR image dataset.
+1. Identified cuisines from recipe description using Linear Suppor Vector Machine, TFIDF.
+2. Used One vs Rest model.
+3. After 27 training iterations, attained testing accuracy of 78.147% <!--and loss 0.03 on 60K (12MB+) recipe dataset-->.
 </pre>
 
 #### Code
 <pre>
-GitHub Link      : <a href=https://github.com/anjanatiha/Kannada-MNIST-Classification-with-Deep-Learning>Kannada MNIST Classification with Deep Learning (GitHub)</a>
-GitLab Link      : <a href=https://gitlab.com/anjanatiha/Kannada-MNIST-Classification-with-Deep-Learning>Kannada MNIST Classification with Deep Learning (GitLab)</a>
-Kaggle Notebook  : <a href=https://www.kaggle.com/anjanatiha/kannada-mnist-classification-with-deep-learning>Kannada MNIST Classification with Deep Learning</a>
+GitHub Link      : <a href=https://github.com/anjanatiha/Cuisine-Detection>Cuisine Detection (GitHub)</a>
+GitLab Link      : <a href=https://gitlab.com/anjanatiha/Cuisine-Detection>Cuisine Detection (GitLab)</a>
+Kaggle Notebook  : <a href=https://www.kaggle.com/anjanatiha/cuisine-prediction>Cuisine Detection</a>
 Portfolio        : <a href=https://anjanatiha.wixsite.com/website>Anjana Tiha's Portfolio</a>
 </pre>
 
 #### Dataset
 <pre>
-Dataset Name     : Kannada MNIST
-Dataset Link     : <a href=https://www.kaggle.com/c/Kannada-MNIST>Kannada-MNIST (Kaggle)</a>
-                 : <a href=https://github.com/vinayprabhu/Kannada_MNIST (GitHub Original Dataset)</a>
-                 
-Original Paper   : <a href=https://arxiv.org/abs/1908.01242>Kannada-MNIST: A new handwritten digits dataset for the Kannada language</a> 
-                   Authors: Vinay Uday Prabhu 
+Dataset Name     : Cuisine Detection
+Dataset Link     : <a href=https://www.kaggle.com/c/whats-cooking-kernels-only>whats-cooking-kernels-only (Kaggle)</a>
 </pre>
 
 ### Dataset Details
 <pre>
-Dataset Name            : Kannada MNIST
-Number of Class         : 10
+Dataset Name            : whats-cooking-kernels-only
+Number of Class         : ---
 </pre>
 
+<!--
 | Dataset Subtype | Number of Image | Size of Images (GB/Gigabyte) |
 | :-------------- | --------------: | ---------------------------: |
 | **Total**       | 40,000          | 12 MB                        |
 | **Training**    | 34,000          | 10.2 MB                      |
 | **Validation**  | 6,000           | 1.8 MB                       |
 | **Testing**     | 44,004          |                       |
-
+-->
 
 ### Model and Training Prameters
 | Current Parameters   | Value                                                       |
 | :------------------- | ----------------------------------------------------------: |
-| **Base Model**       | Custom CNN                                                  |
+| **Base Model**       | Linear Support Vector Machine                               |
+<!--
 | **Optimizers**       | Adam                                                        |
 | **Loss Function**    | Categorical Crossentropy                                    |
 | **Learning Rate**    | 0.0001                                                      |
 | **Batch Size**       | 128                                                         |                                     
 | **Number of Epochs** | 27                                                          |
 | **Training Time**    | 9 min                                                       |
-
+-->
 
 ### Model Performance Metrics (Prediction/ Recognition / Classification)
 | Dataset              | Training       | Validation    | Test      |                                 
 | :------------------- | -------------: | ------------: | --------: |
-| **Accuracy**         | 99.71%         | 98.74%        | 93.72%    |
-| **Loss**             | 0.0234         | 0.0219        | ---       |
+| **Accuracy**         | 78.64%         | ---           | 78.147%    |
+| **Loss**             | ---            | ---           | ---       |
 | **Precision**        | ---            | ---           | ---       |
 | **Recall**           | ---            | ---           | ---       |
 | **Roc-Auc**          | ---            | ---           | ---       |
 
-
+<!--
 ### Other Experimented Model and Training Prameters
 | Parameters (Experimented) | Value                                                  |
 | :------------------------ | -----------------------------------------------------: |
@@ -79,6 +76,7 @@ Number of Class         : 10
 | **Number of Epochs**      | 27 - 100                                               |
 | **Training Time**         | 9min                                                   |
 
+-->
 
 ### Hardware
 | Parameters (Experimented) | Value                                                  |
@@ -90,13 +88,14 @@ Number of Class         : 10
 | **Memory**                | 16 GB                                                  |
 | **Number of Core**        | 2                                                      |
 
-
+<!--
 ### Visualization
 #### Class Distribution: 
 <kbd>
 <img src=https://github.com/anjanatiha/Kannada-MNIST-Classification-with-Deep-Learning/blob/master/demo/images/class-dist.png>
 </kbd>
-
+-->
+<!--
 #### Model Performance: 
 <kbd>
 <img src=https://github.com/anjanatiha/Kannada-MNIST-Classification-with-Deep-Learning/blob/master/demo/report/hist.png>
@@ -111,23 +110,23 @@ Number of Class         : 10
 <kbd>
 <a href=https://github.com/anjanatiha/Histopathologic-Cancer-Detection/blob/master/demo/images/result.png>See More Images</a>
 </kbd>
-
+-->
+<!--
 ##### Confusion Matrix: 
 <kbd>
 <img src=https://github.com/anjanatiha/Histopathologic-Cancer-Detection/blob/master/demo/report/CM.png alt="Confusion Matrix" width=800px height=600px>
 </kbd>
 -->
-
 #### Tools / Libraries
 <pre>
 Languages               : Python
 Tools/IDE               : Kaggle
-Libraries               : Keras
+Libraries               : scikit-learn
 </pre>
 
 #### Dates
 <pre>
-Duration                : February 2020 
+Duration                : February 2019 
 Current Version         : v1.0.0.10
-Last Update             : 02.12.2020
+Last Update             : 02.12.2019
 </pre>
